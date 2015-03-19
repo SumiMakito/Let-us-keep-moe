@@ -7,8 +7,11 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="shortcut icon" href="ico/favicon.png">
-<title>( · 8 · )</title>
+<title>HENTEX 2015</title>
 <!-- Bootstrap core CSS -->
+<link rel="stylesheet" type="text/css" href="css/jquery.countdown.css"> 
+<script type="text/javascript" src="js/jquery.plugin.js"></script> 
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
 <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
 	 <link href='http://fonts.useso.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	 <link href='http://fonts.useso.com/css?family=Karla' rel='stylesheet' type='text/css'>
@@ -46,21 +49,26 @@ h1,h2{
 -->
 </style></head>
 <body>
-<div class="container" align="left">
-	<h1 align="center" >&quot;Let us keep moe!&quot;</h1>
-	<h2 align="center" >&quot;<span style="font-weight: bold">萌即正义</span>!&quot;</h2>
+<div class="container" align="center">
+	<h1 align="center" >&quot;高考&quot;</h1>
+	<h2 align="center" >&quot;<span style="font-weight: bold">Is coming</span>!&quot;</h2>
 	<hr>
 	<p align="center">
-	    にっこにっこにー♪<br/>
-	    あなたのハートににこにこにー♪<br/>
-	    笑顔届ける矢澤にこにこー♪<br/>
-	    にこにーって覚えてラブにこー♪
+	    距离高考...<br/>
 	</p>
 	
+	<div id="countdown" align="center"></div>
+	
+	<p align="center">要加油呢Nico~</p>
 	<hr>
 
 	<p align="center">Copyright(c)2014-2015 SumiMakito</p>
 </div>
 <script src="http://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" >
+    var newYear = new Date(); 
+newYear = new Date(2015, 6 - 1, 7); 
+$('#countdown').countdown({until: newYear}); 
+</script>
 </body>
 </html>
