@@ -47,7 +47,13 @@ h1,h2{
 }
  hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 -->
-</style></head>
+</style>
+<script>
+    var newYear = new Date(); 
+newYear = new Date(2015, 6 - 1, 7); 
+$('#countdown').countdown({until: newYear}); 
+</script>
+</head>
 <body>
 <div class="container" align="center">
 	<h1 align="center" >&quot;高考&quot;</h1>
@@ -65,10 +71,5 @@ h1,h2{
 	<p align="center">Copyright(c)2014-2015 SumiMakito</p>
 </div>
 <script src="http://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" >
-    var newYear = new Date(); 
-newYear = new Date(2015, 6 - 1, 7); 
-$('#countdown').countdown({until: newYear}); 
-</script>
 </body>
 </html>
